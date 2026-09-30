@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tende da Sole e Pergotende a Roma | Piattelli</title>
-  <meta name="description" content="Tende da sole e pergotende su misura a Roma. Produzione diretta, garanzia fino a 8 anni e sopralluogo gratuito.">
+  <meta name="description" content="Tende da sole e pergotende su misura a Roma. Produzione diretta nel laboratorio di Via Tozzi 21 e showroom in Lungotevere Marzio 10. Garanzia 8 anni e sopralluogo gratuito.">
   
   <style>
     :root {
@@ -19,7 +19,7 @@
     body { color: var(--text); background-color: var(--white); line-height: 1.6; }
 
     /* Header */
-    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: var(--white); box-shadow: 0 2px 12px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: var(--white); box-shadow: 0 2px 12px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; }
     .logo img { height: 85px; width: auto; display: block; }
 
     /* Hero Section */
@@ -43,6 +43,17 @@
     .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; }
     .feature-item { padding: 30px 20px; background: var(--bg-light); border-radius: 8px; border-left: 4px solid var(--accent); text-align: left; }
     .feature-item h4 { color: var(--primary); margin-bottom: 10px; font-size: 1.2rem; }
+
+    /* Sezione Sedi */
+    .stores-section { padding: 50px 5%; background: var(--white); text-align: center; border-top: 1px solid #E2E8F0; }
+    .stores-section h2 { color: var(--primary); font-size: 1.8rem; margin-bottom: 30px; font-weight: 800; }
+    .stores-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; text-align: left; max-width: 1100px; margin: 0 auto; }
+    .store-card { background: var(--bg-light); border-radius: 10px; padding: 25px; border: 1px solid #E2E8F0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .store-card h3 { color: var(--primary); font-size: 1.3rem; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+    .store-tag { display: inline-block; background: var(--primary); color: var(--white); font-size: 0.75rem; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-bottom: 12px; text-transform: uppercase; }
+    .store-card p { font-size: 0.95rem; color: #4A5568; margin-bottom: 10px; }
+    .store-card ul { list-style: none; padding: 0; margin-top: 10px; font-size: 0.9rem; color: #2D3748; }
+    .store-card ul li { margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
 
     /* Floating WhatsApp Button */
     .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 14px 22px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.25); z-index: 9999; display: flex; align-items: center; gap: 8px; font-size: 1rem; }
@@ -73,22 +84,18 @@
   <section class="hero">
     <div class="hero-text">
       <h1>Tende da Sole e Pergotende su Misura a Roma</h1>
-      <p>Produzione diretta dal nostro laboratorio di Via Tozzi. Resistenza garantita fino a 8 anni e posa in opera specializzata a domicilio.</p>
+      <p>Produzione e confezione diretta nel grande laboratorio di Via Federico Tozzi 21 e punto consulenza in centro in Lungotevere Marzio 10. Garanzia fino a 8 anni e posa specializzata.</p>
       
       <!-- Grafica Vettoriale Tende da Sole -->
       <svg class="hero-img" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
         <rect width="100%" height="100%" fill="#0F2042"/>
         <path d="M0 0 L800 0 L800 450 L0 450 Z" fill="#1E293B"/>
-        <!-- Struttura e Telo Tenda da Sole -->
         <polygon points="100,50 700,50 780,260 20,260" fill="#D35400" opacity="0.9"/>
-        <!-- Strisce Tenda -->
         <polygon points="180,50 260,50 220,260 140,260" fill="#F39C12" opacity="0.8"/>
         <polygon points="340,50 420,50 380,260 300,260" fill="#F39C12" opacity="0.8"/>
         <polygon points="500,50 580,50 540,260 460,260" fill="#F39C12" opacity="0.8"/>
         <polygon points="660,50 700,50 780,260 700,260" fill="#F39C12" opacity="0.8"/>
-        <!-- Mantovana a Onde -->
         <path d="M20,260 Q 60,300 100,260 Q 140,300 180,260 Q 220,300 260,260 Q 300,300 340,260 Q 380,300 420,260 Q 460,300 500,260 Q 540,300 580,260 Q 620,300 660,260 Q 700,300 740,260 Q 760,280 780,260 L 780,270 L 20,270 Z" fill="#E67E22"/>
-        <!-- Testo -->
         <text x="50%" y="78%" dominant-baseline="middle" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="28" font-weight="bold">TENDE DA SOLE & PERGOTENDE</text>
         <text x="50%" y="88%" dominant-baseline="middle" text-anchor="middle" fill="#FDEBD0" font-family="sans-serif" font-size="18" font-weight="600">Fabbrica Diretta • Garanzia fino a 8 Anni • Posa in Opera</text>
       </svg>
@@ -128,6 +135,38 @@
         <h4>Tecnici Dipendenti</h4>
         <p>Montaggio pulito e preciso effettuato solo da personale interno qualificato.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- Sezione Sedi Roma -->
+  <section class="stores-section">
+    <h2>I Nostri Punti Vendita e Laboratori a Roma</h2>
+    <div class="stores-grid">
+      
+      <div class="store-card">
+        <span class="store-tag" style="background: var(--accent);">Sede Principale & Fabbrica</span>
+        <h3>📍 Via Federico Tozzi, 21</h3>
+        <p><strong>Grande Showroom e Laboratorio Artigianale</strong></p>
+        <p>La nostra sede storica e principale: fabbrica e confezione tende da sole, struttura per la posa in opera e magazzino tessuti.</p>
+        <ul>
+          <li>🏭 Produzione e assemblaggio diretto</li>
+          <li>📐 Rilievo misure e progettazione</li>
+          <li>🅿️ Comodo parcheggio riservato</li>
+        </ul>
+      </div>
+
+      <div class="store-card">
+        <span class="store-tag">Atelier Centro Storico</span>
+        <h3>📍 Lungotevere Marzio, 10</h3>
+        <p><strong>Showroom di Rappresentanza</strong></p>
+        <p>Punto di incontro nel cuore di Roma per consulenze d'arredo, visione campionari e scelta dei tessuti per esterni ed interni.</p>
+        <ul>
+          <li>🏛️ Posizione centrale (Zona Prati / Centro)</li>
+          <li>🎨 Consulenza personalizzata</li>
+          <li>🤝 Ricevimento clienti su appuntamento</li>
+        </ul>
+      </div>
+
     </div>
   </section>
 
