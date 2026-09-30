@@ -3,176 +3,261 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tende da Sole e Pergotende a Roma | Piattelli</title>
-  <meta name="description" content="Tende da sole e pergotende su misura a Roma. Produzione diretta nel laboratorio di Via Tozzi 21 e showroom in Lungotevere Marzio 10. Garanzia 8 anni e sopralluogo gratuito.">
-  
-  <style>
-    :root {
-      --primary: #0F2042;       /* Blu Notte Piattelli */
-      --accent: #D35400;        /* Terracotta Tende */
-      --bg-light: #F8F9FA;
-      --text: #2C3E50;
-      --white: #FFFFFF;
-    }
+  <title>Piattelli Tende da Sole Roma - Pergolati, Tende da Esterno e Pergotende</title>
+  <meta name="description" content="Progettazione, vendita e installazione di tende da sole, pergolati e pergotende a Roma. Showroom in Lungotevere Marzio 10 e Laboratorio Artigianale in Via Federico Tozzi 21.">
 
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
-    body { color: var(--text); background-color: var(--white); line-height: 1.6; }
+  <!-- META TAG OPEN GRAPH PER ANTEPRIMA WHATSAPP / SOCIAL -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Piattelli Tende da Sole Roma - Pergolati e Tende da Esterno">
+  <meta property="og:description" content="Sopraluoghi gratuiti, tessuti garantiti e installazione qualificata. Showroom Lungotevere Marzio 10 | Laboratorio Via Federico Tozzi 21.">
+  <meta property="og:url" content="https://magopaolo-blip.github.io/piattellitendedasole.it/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&h=630&q=80">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
-    /* Header */
-    header { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: var(--white); box-shadow: 0 2px 12px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; }
-    .logo img { height: 85px; width: auto; display: block; }
-
-    /* Hero Section */
-    .hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; padding: 50px 5%; background: var(--bg-light); align-items: center; }
-    .hero-text h1 { font-size: 2.4rem; color: var(--primary); margin-bottom: 15px; font-weight: 800; line-height: 1.2; }
-    .hero-text p { font-size: 1.15rem; margin-bottom: 20px; color: #4A5568; }
-    .hero-img { width: 100%; height: 350px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-
-    /* Form Card */
-    .form-card { background: var(--white); padding: 32px; border-radius: 12px; box-shadow: 0 4px 25px rgba(0,0,0,0.08); border-top: 5px solid var(--accent); }
-    .form-card h3 { color: var(--primary); margin-bottom: 15px; font-size: 1.4rem; font-weight: 700; }
-    .form-group { margin-bottom: 15px; }
-    .form-group input, .form-group select { width: 100%; padding: 12px 15px; border: 1px solid #CBD5E0; border-radius: 6px; font-size: 1rem; outline: none; }
-    .form-group input:focus { border-color: var(--accent); }
-    .btn-submit { width: 100%; background: var(--accent); color: var(--white); border: none; padding: 15px; font-size: 1.1rem; font-weight: bold; border-radius: 6px; cursor: pointer; transition: 0.3s; }
-    .btn-submit:hover { opacity: 0.92; }
-
-    /* Features */
-    .features { padding: 60px 5%; text-align: center; }
-    .features h2 { color: var(--primary); font-size: 1.8rem; margin-bottom: 30px; }
-    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; }
-    .feature-item { padding: 30px 20px; background: var(--bg-light); border-radius: 8px; border-left: 4px solid var(--accent); text-align: left; }
-    .feature-item h4 { color: var(--primary); margin-bottom: 10px; font-size: 1.2rem; }
-
-    /* Sezione Sedi */
-    .stores-section { padding: 50px 5%; background: var(--white); text-align: center; border-top: 1px solid #E2E8F0; }
-    .stores-section h2 { color: var(--primary); font-size: 1.8rem; margin-bottom: 30px; font-weight: 800; }
-    .stores-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; text-align: left; max-width: 1100px; margin: 0 auto; }
-    .store-card { background: var(--bg-light); border-radius: 10px; padding: 25px; border: 1px solid #E2E8F0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-    .store-card h3 { color: var(--primary); font-size: 1.3rem; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
-    .store-tag { display: inline-block; background: var(--primary); color: var(--white); font-size: 0.75rem; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-bottom: 12px; text-transform: uppercase; }
-    .store-card p { font-size: 0.95rem; color: #4A5568; margin-bottom: 10px; }
-    .store-card ul { list-style: none; padding: 0; margin-top: 10px; font-size: 0.9rem; color: #2D3748; }
-    .store-card ul li { margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
-
-    /* Floating WhatsApp Button */
-    .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 14px 22px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.25); z-index: 9999; display: flex; align-items: center; gap: 8px; font-size: 1rem; }
-
-    /* Responsive */
-    @media (max-width: 850px) {
-      header { padding: 15px 5%; }
-      .logo img { height: 60px; }
-      .hero { grid-template-columns: 1fr; text-align: center; padding: 30px 5%; }
-      .hero-text h1 { font-size: 1.8rem; }
-      .feature-item { text-align: center; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="logo">
-      <img src="logo-tende.svg" alt="Piattelli Tende da Sole">
-    </div>
-    <div>
-      <a href="https://wa.me/393737502033" target="_blank" style="color: var(--primary); font-weight: bold; text-decoration: none; font-size: 1.1rem;">💬 373 750 2033</a>
+  <!-- HEADER / NAVBAR -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <img src="logo-tende.svg" alt="Piattelli Tende da Sole" class="logo-img">
+      </div>
+      <div class="header-actions">
+        <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20maggiori%20informazioni%20sulle%20tende%20da%20sole." target="_blank" class="btn btn-whatsapp-header">
+          💬 WhatsApp
+        </a>
+        <a href="#contatti" class="btn btn-outline">Sopralluogo Gratuito</a>
+      </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- HERO SECTION -->
   <section class="hero">
-    <div class="hero-text">
-      <h1>Tende da Sole e Pergotende su Misura a Roma</h1>
-      <p>Produzione e confezione diretta nel grande laboratorio di Via Federico Tozzi 21 e punto consulenza in centro in Lungotevere Marzio 10. Garanzia fino a 8 anni e posa specializzata.</p>
-      
-      <!-- Grafica Vettoriale Tende da Sole -->
-      <svg class="hero-img" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
-        <rect width="100%" height="100%" fill="#0F2042"/>
-        <path d="M0 0 L800 0 L800 450 L0 450 Z" fill="#1E293B"/>
-        <polygon points="100,50 700,50 780,260 20,260" fill="#D35400" opacity="0.9"/>
-        <polygon points="180,50 260,50 220,260 140,260" fill="#F39C12" opacity="0.8"/>
-        <polygon points="340,50 420,50 380,260 300,260" fill="#F39C12" opacity="0.8"/>
-        <polygon points="500,50 580,50 540,260 460,260" fill="#F39C12" opacity="0.8"/>
-        <polygon points="660,50 700,50 780,260 700,260" fill="#F39C12" opacity="0.8"/>
-        <path d="M20,260 Q 60,300 100,260 Q 140,300 180,260 Q 220,300 260,260 Q 300,300 340,260 Q 380,300 420,260 Q 460,300 500,260 Q 540,300 580,260 Q 620,300 660,260 Q 700,300 740,260 Q 760,280 780,260 L 780,270 L 20,270 Z" fill="#E67E22"/>
-        <text x="50%" y="78%" dominant-baseline="middle" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="28" font-weight="bold">TENDE DA SOLE & PERGOTENDE</text>
-        <text x="50%" y="88%" dominant-baseline="middle" text-anchor="middle" fill="#FDEBD0" font-family="sans-serif" font-size="18" font-weight="600">Fabbrica Diretta • Garanzia fino a 8 Anni • Posa in Opera</text>
-      </svg>
-    </div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="badge">Protezione Solare & Design da Esterno a Roma</span>
+        <h1>Tende da Sole, Pergolati e Bioclimatiche su Misura</h1>
+        <p>Proteggi e valorizza i tuoi spazi esterni con soluzioni resistenti, tessuti ad alta protezione UV e installazione professionale certificata.</p>
+        
+        <!-- I 3 PULSANTI CATEGORIA -->
+        <div class="category-buttons-title">Scegli la tua soluzione:</div>
+        <div class="category-buttons">
+          <a href="#contatti" class="btn btn-category">Balconi & Terrazzi</a>
+          <a href="#contatti" class="btn btn-category">Pergolati & Bioclimatiche</a>
+          <a href="#contatti" class="btn btn-category">Attività & Dehors B2B</a>
+        </div>
 
-    <!-- Form Lead -->
-    <div class="form-card">
-      <h3>Richiedi Sopralluogo Gratuito</h3>
-      <form action="https://formspree.io/f/TUO_ID_FORMSPREE" method="POST">
-        <div class="form-group">
-          <input type="text" name="nome" placeholder="Il tuo Nome" required>
+        <div class="hero-buttons">
+          <a href="#contatti" class="btn btn-primary">Richiedi Sopralluogo Gratuito</a>
+          <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20richiedere%20un%20preventivo%20per%20tende%20da%20sole." target="_blank" class="btn btn-whatsapp">
+            💬 Scrivici su WhatsApp
+          </a>
         </div>
-        <div class="form-group">
-          <input type="tel" name="telefono" placeholder="Numero di Telefono" required>
-        </div>
-        <div class="form-group">
-          <input type="text" name="zona" placeholder="Zona di Roma (es. Prati, EUR...)" required>
-        </div>
-        <button type="submit" class="btn-submit">Prenota Sopralluogo Gratuito</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Features -->
-  <section class="features">
-    <h2>Perché scegliere il Laboratorio Piattelli</h2>
-    <div class="features-grid">
-      <div class="feature-item">
-        <h4>Fabbrica Diretta</h4>
-        <p>Nessun intermediario: produciamo e confezioniamo le tende direttamente a Via Tozzi.</p>
       </div>
-      <div class="feature-item">
-        <h4>Garanzia 8 Anni</h4>
-        <p>Tessuti ad alta resistenza UV e strutture certificate per resistere agli agenti atmosferici.</p>
-      </div>
-      <div class="feature-item">
-        <h4>Tecnici Dipendenti</h4>
-        <p>Montaggio pulito e preciso effettuato solo da personale interno qualificato.</p>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Tende da Sole e Pergolati di Design">
       </div>
     </div>
   </section>
 
-  <!-- Sezione Sedi Roma -->
-  <section class="stores-section">
-    <h2>I Nostri Punti Vendita e Laboratori a Roma</h2>
-    <div class="stores-grid">
-      
-      <div class="store-card">
-        <span class="store-tag" style="background: var(--accent);">Sede Principale & Fabbrica</span>
-        <h3>📍 Via Federico Tozzi, 21</h3>
-        <p><strong>Grande Showroom e Laboratorio Artigianale</strong></p>
-        <p>La nostra sede storica e principale: fabbrica e confezione tende da sole, struttura per la posa in opera e magazzino tessuti.</p>
-        <ul>
-          <li>🏭 Produzione e assemblaggio diretto</li>
-          <li>📐 Rilievo misure e progettazione</li>
-          <li>🅿️ Comodo parcheggio riservato</li>
-        </ul>
+  <!-- PUNTI DI FORZA -->
+  <section class="section features-section">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">☀️️</div>
+          <h3>Protezione UV e Risparmio</h3>
+          <p>Tessuti ad altissima resistenza per schermare il calore, ridurre i consumi del condizionatore e proteggere la privacy.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛠️</div>
+          <h3>Installazione Certificata</h3>
+          <p>Montaggio eseguito direttamente dai nostri tecnici interni con garanzia sulla tenuta e sulla struttura.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📐</div>
+          <h3>Sopralluogo & Rilievo Gratuito</h3>
+          <p>Consulenza tecnica sul posto a Roma e provincia per individuare la soluzione ideale senza impegno.</p>
+        </div>
       </div>
-
-      <div class="store-card">
-        <span class="store-tag">Atelier Centro Storico</span>
-        <h3>📍 Lungotevere Marzio, 10</h3>
-        <p><strong>Showroom di Rappresentanza</strong></p>
-        <p>Punto di incontro nel cuore di Roma per consulenze d'arredo, visione campionari e scelta dei tessuti per esterni ed interni.</p>
-        <ul>
-          <li>🏛️ Posizione centrale (Zona Prati / Centro)</li>
-          <li>🎨 Consulenza personalizzata</li>
-          <li>🤝 Ricevimento clienti su appuntamento</li>
-        </ul>
-      </div>
-
     </div>
   </section>
 
-  <!-- Tasto WhatsApp Fluttuante -->
-  <a href="https://wa.me/393737502033?text=Salve,%20ho%20visto%20la%20pagina%20Tende%20da%20Sole%20e%20vorrei%20un%20preventivo%20orientativo." class="whatsapp-btn" target="_blank">
-    💬 Stima Rapida WhatsApp
+  <!-- SEZIONE GALLERIA IMMAGINI -->
+  <section class="section bg-light gallery-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Realizzazioni e Soluzioni da Esterno</h2>
+        <p>Scopri alcuni dei nostri progetti installati a Roma tra tende a bracci, strutture pergolate e coperture bioclimatiche.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Pergola Bioclimatica da Esterno">
+          <div class="gallery-caption">Pergole Bioclimatiche</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Tende a Bracci per Terrazzo">
+          <div class="gallery-caption">Tende a Bracci per Terrazzi</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Tende a Caduta per Balcone">
+          <div class="gallery-caption">Tende a Caduta e Guidate</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="Coperture per Dehors e Ristoranti">
+          <div class="gallery-caption">Dehors per Attività Commerciali</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE RECENSIONI -->
+  <section class="section reviews-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Cosa Dicono i Nostri Clienti</h2>
+        <p>La soddisfazione di chi ha scelto la precisione e la qualità artigianale Piattelli.</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Installato una pergotenda sul nostro terrazzo a Prati. Lavoro pulito, puntuali nelle consegne e struttura di altissima qualità. Consigliatissimi!"</p>
+          <div class="review-author"><strong>Marco V.</strong> — Roma Prati</div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Servizio impeccabile. Dal sopralluogo tecnico alla scelta del tessuto nello showroom in Lungotevere. Tende a bracci motorizzate perfette."</p>
+          <div class="review-author"><strong>Laura B.</strong> — Roma Centro</div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Professionali e veloci. Avevamo bisogno di schermare il dehors del nostro locale prima dell'estate. Risultato eccellente e assistenza post-vendita al top."</p>
+          <div class="review-author"><strong>Roberto M.</strong> — Gestore B2B</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE SEDI -->
+  <section id="sedi" class="section bg-light locations-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Le Nostre Sedi a Roma</h2>
+        <p>Un punto di riferimento di rappresentanza nel cuore della città e una struttura produttiva con laboratorio e magazzino per dare forma a ogni progetto.</p>
+      </div>
+      <div class="locations-grid">
+        
+        <!-- SEDE LUNGOTEVERE MARZIO 10 -->
+        <div class="location-card highlight-card">
+          <div class="location-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Showroom di Rappresentanza Lungotevere Marzio 10 Roma">
+          </div>
+          <div class="location-content">
+            <div class="location-badge">Showroom & Rappresentanza</div>
+            <h3>Lungotevere Marzio, 10</h3>
+            <p class="location-address">📍 Lungotevere Marzio 10, Roma (Zona Prati / Centro)</p>
+            <p>Atelier al centro di Roma ideale per consulenze d'arredo riservate, progettazione tendaggi e selezione tessuti d'alta gamma. Il punto di riferimento per accogliere clienti e architetti.</p>
+            <ul class="location-list">
+              <li>🏛️ Posizione centrale (Zona Prati / Centro)</li>
+              <li>🎨 Consultazione campionari esclusivi e tessuti d'alta gamma</li>
+              <li>🤝 Appuntamenti dedicati e riservati con clienti e architetti</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SEDE VIA FEDERICO TOZZI 21 -->
+        <div class="location-card">
+          <div class="location-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Laboratorio e Magazzino Via Federico Tozzi 21">
+          </div>
+          <div class="location-content">
+            <div class="location-badge secondary">Laboratorio Artigianale & Confezione</div>
+            <h3>Via Federico Tozzi, 21</h3>
+            <p class="location-address">📍 Via Federico Tozzi 21, Roma</p>
+            <p>La sede operativa principale dove i nostri tappezzieri e sartine eseguono il restauro, la confezione e il rivestimento di divani, poltrone e tendaggi.</p>
+            <ul class="location-list">
+              <li>✂️ Laboratorio di sartoria e imbottiture su misura</li>
+              <li>🛋️ Ritiro, lavorazione diretta e restauro mobili</li>
+              <li>🅿️ Facile accesso e comodo parcheggio per la logistica</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM DI CONTATTO -->
+  <section id="contatti" class="section contact-section">
+    <div class="container contact-container">
+      <div class="contact-info">
+        <h2>Richiedi un Sopralluogo o un Preventivo</h2>
+        <p>Compila il modulo o contattaci subito su WhatsApp. Ti ricontatteremo per concordare un sopralluogo gratuito e senza impegno.</p>
+        
+        <div class="contact-details">
+          <p><strong>🏛️ Showroom di Rappresentanza:</strong> Lungotevere Marzio 10, Roma (Prati/Centro)</p>
+          <p><strong>✂️ Laboratorio Artigianale & Magazzino:</strong> Via Federico Tozzi 21, Roma</p>
+        </div>
+
+        <div class="direct-whatsapp-box">
+          <p><strong>Preferisci un contatto rapido?</strong></p>
+          <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20maggiori%20informazioni%20sulle%20tende%20da%20sole." target="_blank" class="btn btn-whatsapp">
+            💬 Chatta con noi su WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="nome">Nome e Cognome *</label>
+            <input type="text" id="nome" name="nome" required placeholder="Inserisci il tuo nome">
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required placeholder="Inserisci la tua email">
+          </div>
+          <div class="form-group">
+            <label for="telefono">Telefono *</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="Inserisci il tuo numero">
+          </div>
+          <div class="form-group">
+            <label for="categoria">Tipologia Intervento</label>
+            <select id="categoria" name="categoria">
+              <option value="balcone">Tenda per Balcone / Terrazzo</option>
+              <option value="pergolato">Pergolato / Bioclimatica</option>
+              <option value="dehors">Dehors Commerciale / B2B</option>
+              <option value="sostituzione">Sostituzione Telo / Manutenzione</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="messaggio">Dettagli della Richiesta</label>
+            <textarea id="messaggio" name="messaggio" rows="3" placeholder="Indica zona di Roma, misure approssimative o esigenze specifiche..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Invia Richiesta Sopralluogo</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p><strong>Piattelli Tende da Sole</strong></p>
+      <p>Showroom: Lungotevere Marzio, 10 - Roma | Laboratorio Artigianale: Via Federico Tozzi, 21 - Roma</p>
+      <p style="margin-top: 6px; font-size: 0.8rem; opacity: 0.7;">&copy; Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <!-- TASTO WHATSAPP FLUTTUANTE IN BASSO A DESTRA -->
+  <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20maggiori%20informazioni%20sulle%20tende%20da%20sole." class="whatsapp-float" target="_blank" aria-label="Contattaci su WhatsApp">
+    💬
   </a>
 
 </body>
