@@ -10,8 +10,8 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Piattelli Tende da Sole e Pergotende su Misura a Roma">
   <meta property="og:description" content="Fabbrica Diretta a Via Federico Tozzi 21 | Showroom in Lungotevere Marzio 10. Prenota un sopralluogo gratuito.">
-  <meta property="og:url" content="https://magopaolo-blip.github.io/tendedasolepiattelli/">
-  <meta property="og:image" content="https://magopaolo-blip.github.io/tendedasolepiattelli/Hero-home-tendedasolepiattelli.png">
+  <meta property="og:url" content="https://tende.piattelli.it/">
+  <meta property="og:image" content="https://tende.piattelli.it/Hero-home-tendedasolepiattelli.png">
 
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
         <img src="logo-tende.svg" alt="Piattelli Tende da Sole" class="logo-img">
       </div>
       <div class="header-contact">
-        <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20maggiori%20informazioni%20sulle%20tende%20da%20sole." target="_blank" class="phone-link">
+        <a href="https://wa.me/393737502033?text=DILLO%20A%20PIATTELLI%0A%0ABuongiorno%2C%20vorrei%20maggiori%20informazioni%20sulle%20tende%20da%20sole.%0A%0AContatto%20da%20tende.piattelli.it" target="_blank" class="phone-link">
           💬 373 750 2033
         </a>
       </div>
@@ -45,10 +45,6 @@
         
         <div class="hero-banner-card">
           <img src="Hero-home-tendedasolepiattelli.png" alt="Tende da Sole e Pergotende Piattelli">
-          <div class="banner-overlay-text">
-            <h3>TENDE DA SOLE & PERGOTENDE</h3>
-            <p>Fabbrica Diretta • Garanzia fino a 8 Anni • Posa in Opera</p>
-          </div>
         </div>
       </div>
 
@@ -56,17 +52,29 @@
       <div class="hero-right">
         <div class="form-card">
           <h3>Richiedi Sopralluogo Gratuito</h3>
-          <form class="lead-form">
+          <form class="lead-form" id="tendeForm">
             <div class="form-group">
-              <input type="text" placeholder="Il tuo Nome" required>
+              <label for="nome">Nome e Cognome</label>
+              <input id="nome" type="text" placeholder="Es. Paolo Rossi" required>
             </div>
             <div class="form-group">
-              <input type="tel" placeholder="Numero di Telefono" required>
+              <label for="telefono">Numero di Telefono</label>
+              <input id="telefono" type="tel" placeholder="Es. 333 123 4567" required>
             </div>
             <div class="form-group">
-              <input type="text" placeholder="Zona di Roma (es. Prati, EUR...)">
+              <label for="zona">Zona di Roma</label>
+              <input id="zona" type="text" placeholder="Es. Prati, EUR, Monteverde">
             </div>
-            <button type="submit" class="btn btn-orange btn-block">Prenota Sopralluogo Gratuito</button>
+            <div class="form-group">
+              <label for="richiesta">Cosa ti serve?</label>
+              <select id="richiesta">
+                <option value="Sopralluogo per nuova tenda da sole">Nuova tenda da sole</option>
+                <option value="Pergotenda / struttura ombreggiante">Pergotenda</option>
+                <option value="Riparazione o sostituzione telo">Riparazione / sostituzione telo</option>
+                <option value="Assistenza tecnica">Assistenza tecnica</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-orange btn-block">Richiedi Sopralluogo su WhatsApp</button>
           </form>
         </div>
       </div>
@@ -91,6 +99,20 @@
           <h4>Tecnici Dipendenti</h4>
           <p>Montaggio pulito e preciso effettuato solo da personale interno qualificato.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORIA PIATTELLI -->
+  <section class="section story-section">
+    <div class="container story-wrap">
+      <div>
+        <span class="eyebrow">Esperienza Piattelli</span>
+        <h2 class="section-heading">Tende da sole: installazione, assistenza e riparazione</h2>
+      </div>
+      <div class="story-copy">
+        <p>Piattelli porta nel settore delle tende da sole la stessa esperienza familiare maturata nel tessile e nell'arredo.</p>
+        <p>Oggi segue il cliente dal sopralluogo alla posa, con squadre dedicate anche a <strong>riparazioni, sostituzione teli e interventi di assistenza</strong> a Roma.</p>
       </div>
     </div>
   </section>
@@ -170,11 +192,11 @@
             <span class="loc-badge">Showroom & Rappresentanza</span>
             <h3>Lungotevere Marzio, 10</h3>
             <p class="loc-sub">📍 Roma (Zona Prati / Centro)</p>
-            <p>Atelier al centro di Roma ideale per consulenze d'arredo riservate, progettazione tendaggi e selezione tessuti d'alta gamma.</p>
+            <p>Showroom in centro a Roma per consulenze, scelta di tessuti e soluzioni per tende da sole, pergole e schermature.</p>
             <ul>
               <li>🏛️ Posizione centrale (Zona Prati / Centro)</li>
-              <li>🎨 Consultazione campionari esclusivi</li>
-              <li>🤝 Appuntamenti dedicati con clienti e architetti</li>
+              <li>🎨 Consultazione tessuti e campionari</li>
+              <li>🤝 Consulenze dedicate per privati, tecnici e progettisti</li>
             </ul>
           </div>
         </div>
@@ -188,10 +210,10 @@
             <span class="loc-badge dark">Laboratorio Artigianale & Confezione</span>
             <h3>Via Federico Tozzi, 21</h3>
             <p class="loc-sub">📍 Roma</p>
-            <p>La sede operativa principale dove i nostri tappezzieri e sartine eseguono il restauro e il rivestimento di divani, poltrone e tendaggi.</p>
+            <p>La sede operativa principale dove vengono preparate, confezionate e gestite installazioni, riparazioni e assistenza per tende da sole e sistemi ombreggianti.</p>
             <ul>
-              <li>✂️ Laboratorio di sartoria e imbottiture su misura</li>
-              <li>🛋️️ Ritiro e lavorazione diretta mobili</li>
+              <li>🛠️ Preparazione, assistenza e riparazioni</li>
+              <li>☀️ Tende da sole, pergole e sostituzione teli</li>
               <li>🅿️ Facile accesso e comodo parcheggio</li>
             </ul>
           </div>
@@ -211,9 +233,32 @@
   </footer>
 
   <!-- BOTTONE WHATSAPP -->
-  <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20maggiori%20informazioni." class="whatsapp-sticky" target="_blank">
+  <a href="https://wa.me/393737502033?text=DILLO%20A%20PIATTELLI%0A%0ABuongiorno%2C%20vorrei%20una%20stima%20rapida%20per%20una%20tenda%20da%20sole.%0A%0AContatto%20da%20tende.piattelli.it" class="whatsapp-sticky" target="_blank">
     💬 Stima Rapida WhatsApp
   </a>
+
+
+  <script>
+    document.getElementById('tendeForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nome = document.getElementById('nome').value.trim();
+      const telefono = document.getElementById('telefono').value.trim();
+      const zona = document.getElementById('zona').value.trim() || 'Non indicata';
+      const richiesta = document.getElementById('richiesta').value;
+      const testo =
+`DILLO A PIATTELLI
+
+Buongiorno, vorrei richiedere informazioni per tende da sole.
+
+Nome: ${nome}
+Telefono: ${telefono}
+Zona: ${zona}
+Richiesta: ${richiesta}
+
+Contatto da tende.piattelli.it`;
+      window.open('https://wa.me/393737502033?text=' + encodeURIComponent(testo), '_blank');
+    });
+  </script>
 
 </body>
 </html>

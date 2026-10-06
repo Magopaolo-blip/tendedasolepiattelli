@@ -406,3 +406,94 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* OTTIMIZZAZIONE FINALE 2026 */
+.section { padding: 28px 0; }
+.hero { padding: 28px 0 24px; }
+.section-heading { margin-bottom: 18px; }
+.hero-sub { margin-bottom: 14px; }
+.form-card { padding: 22px; }
+.form-group { margin-bottom: 10px; }
+.form-group label {
+  display:block;
+  margin:0 0 5px;
+  font-size:.82rem;
+  font-weight:700;
+  color:var(--blue-primary);
+}
+.form-group input,
+.form-group select {
+  width:100%;
+  min-height:46px;
+  padding:11px 12px;
+  border:1px solid var(--border-color);
+  border-radius:6px;
+  font-size:.95rem;
+  font-family:inherit;
+  background:#fff;
+}
+.hero-banner-card img { height: 250px; }
+.banner-overlay-text { display:none !important; }
+
+.story-section {
+  background:#fff;
+  border-top:1px solid #edf0f4;
+  border-bottom:1px solid #edf0f4;
+}
+.story-wrap {
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:32px;
+  align-items:center;
+}
+.story-wrap .section-heading {
+  margin:4px 0 0;
+  text-align:left;
+}
+.eyebrow {
+  display:block;
+  color:var(--orange-accent);
+  text-transform:uppercase;
+  font-size:.75rem;
+  letter-spacing:.08em;
+  font-weight:800;
+}
+.story-copy p {
+  margin:0 0 8px;
+  font-size:.95rem;
+  color:var(--text-muted);
+}
+.story-copy p:last-child { margin-bottom:0; }
+
+.reviews-grid { gap:16px; }
+.review-box { padding:17px; }
+.gallery-grid { gap:16px; }
+.advantages-grid { gap:16px; }
+.advantage-card { padding:17px; }
+.locations-grid { gap:18px; }
+.location-content { padding:17px; }
+.location-img-wrapper { height:190px; }
+.footer { padding:20px 0 26px; }
+
+@media (max-width:900px) {
+  .story-wrap { grid-template-columns:1fr; gap:10px; }
+  .section { padding:24px 0; }
+  .hero { padding:22px 0; }
+  .hero-container { gap:18px; }
+  .hero-left h1 { font-size:1.85rem; }
+  .hero-banner-card img { height:auto; }
+  .section-heading { font-size:1.5rem; margin-bottom:16px; }
+  .form-card { padding:18px; }
+  .location-img-wrapper { height:auto; }
+  .location-img-wrapper img { height:auto; aspect-ratio:16/9; }
+  .whatsapp-sticky {
+    left:12px;
+    right:12px;
+    bottom:12px;
+    text-align:center;
+    font-size:.95rem;
+    padding:13px 16px;
+  }
+  .footer { padding-bottom:78px; }
+}
