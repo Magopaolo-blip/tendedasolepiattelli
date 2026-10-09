@@ -1,0 +1,1 @@
+Piattelli: sezione sedi unificata. Via Tozzi principale; Lungotevere showroom KA International; Prati Fiscali corner. Caricare tutti i file nella root del repository GitHub, mantenendo CNAME.

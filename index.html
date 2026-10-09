@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="piattelli-sedi.css">
 </head>
 <body>
 
@@ -177,48 +178,65 @@
     </div>
   </section>
 
-  <!-- SEDI ESATTE CON IMMAGINI SPECIFICHE -->
-  <section id="sedi" class="section bg-light locations-section">
+  <!-- SEDI: sede principale in evidenza, showroom e corner in secondo piano -->
+  <section class="section bg-light piattelli-sedi" id="sedi">
     <div class="container">
-      <h2 class="section-heading center">I Nostri Punti Vendita e Laboratori a Roma</h2>
-      <div class="locations-grid">
-        
-        <!-- LUNGOTEVERE MARZIO 10 -->
-        <div class="location-card highlight-card">
-          <div class="location-img-wrapper">
-            <img src="sede-lungotevere.png" alt="Showroom Lungotevere Marzio 10">
+      <div class="section-intro center"><span class="eyebrow">Vieni a trovarci</span><h2 class="section-heading">Le nostre sedi a Roma</h2><p class="section-sub">Tre punti di riferimento, ciascuno con una funzione diversa.</p></div>
+      <div class="locations-layout">
+        <article class="location-box location-main" id="sede-principale">
+          <div class="location-main-media">
+            <img src="sede-viatozzi.webp" loading="lazy" width="1200" height="760" alt="Ingresso della sede principale Piattelli Arredocasa in Via Federico Tozzi 21 a Roma" class="location-img">
           </div>
-          <div class="location-content">
-            <span class="loc-badge">Showroom & Rappresentanza</span>
-            <h3>Lungotevere Marzio, 10</h3>
-            <p class="loc-sub">📍 Roma (Zona Prati / Centro)</p>
-            <p>Showroom in centro a Roma per consulenze, scelta di tessuti e soluzioni per tende da sole, pergole e schermature.</p>
-            <ul>
-              <li>🏛️ Posizione centrale (Zona Prati / Centro)</li>
-              <li>🎨 Consultazione tessuti e campionari</li>
-              <li>🤝 Consulenze dedicate per privati, tecnici e progettisti</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- VIA FEDERICO TOZZI 21 -->
-        <div class="location-card">
-          <div class="location-img-wrapper">
-            <img src="sede-viatozzi.png" alt="Laboratorio Via Federico Tozzi 21">
-          </div>
-          <div class="location-content">
-            <span class="loc-badge dark">Laboratorio Artigianale & Confezione</span>
+          <div class="location-main-info">
+            <span class="loc-badge dark">Sede principale · Laboratorio e vendita</span>
             <h3>Via Federico Tozzi, 21</h3>
             <p class="loc-sub">📍 Roma</p>
-            <p>La sede operativa principale dove vengono preparate, confezionate e gestite installazioni, riparazioni e assistenza per tende da sole e sistemi ombreggianti.</p>
+            <p>La sede principale Piattelli Arredocasa: laboratorio artigianale, magazzino, vendita al pubblico e lavorazioni su misura. Qui i nostri tappezzieri e le nostre sarte realizzano tendaggi, rivestimenti per divani e poltrone e soluzioni tessili per la casa.</p>
             <ul>
-              <li>🛠️ Preparazione, assistenza e riparazioni</li>
-              <li>☀️ Tende da sole, pergole e sostituzione teli</li>
-              <li>🅿️ Facile accesso e comodo parcheggio</li>
+              <li>✂️ Sartoria, tappezzeria e confezione diretta</li>
+              <li>🛋️ Tessuti e rivestimenti su misura</li>
+              <li>🅿️ Accesso comodo e parcheggio</li>
             </ul>
+            <div class="location-actions">
+              <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Via%20Federico%20Tozzi%2021%2C%20Roma" target="_blank" rel="noopener noreferrer">📍 Indicazioni stradali</a>
+              <a class="btn btn-secondary" href="https://wa.me/393737502033?text=DILLO%20A%20PIATTELLI%0A%0ABuongiorno%2C%20vorrei%20informazioni%20sulla%20sede%20principale%20di%20Via%20Federico%20Tozzi%2021.%20Contatto%20da%20tende.piattelli.it" target="_blank" rel="noopener noreferrer">💬 Informazioni su WhatsApp</a>
+            </div>
           </div>
+        </article>
+        <div class="locations-grid locations-secondary">
+          <article class="location-box location-secondary-card" id="showroom-lungotevere">
+            <img src="sede-lungotevere.webp" loading="lazy" width="1200" height="760" alt="Vetrine dello showroom Piattelli a Lungotevere Marzio 10, Roma" class="location-img">
+            <div class="location-body">
+              <span class="loc-badge">Showroom &amp; rappresentanza</span>
+              <h3>Lungotevere Marzio, 10</h3>
+              <p class="loc-sub">Roma · Centro</p>
+              <p>Uno spazio dedicato alla scelta dei tessuti, alla progettazione dei tendaggi e alle consulenze d'arredo personalizzate.</p>
+              <div class="ka-showroom-detail">
+                <span class="ka-partner-label">In showroom · Nuove collezioni</span>
+                <div class="ka-detail-heading"><h4>KA International</h4><span class="ka-detail-monogram" aria-hidden="true">KA</span></div>
+                <p>Piattelli è rivenditore delle collezioni KA International. Scopri tessuti d'arredamento e tendaggi e chiedi informazioni su campionari e disponibilità.</p>
+                <a class="text-link" href="https://ka-international.com/shop/en/content/catalogs" target="_blank" rel="noopener noreferrer">Guarda le collezioni <span aria-hidden="true">↗</span></a>
+              </div>
+              <div class="location-actions">
+                <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Lungotevere%20Marzio%2010%2C%20Roma" target="_blank" rel="noopener noreferrer">Indicazioni stradali</a>
+                <a class="btn btn-secondary" href="https://wa.me/393737502033?text=DILLO%20A%20PIATTELLI%0A%0ABuongiorno%2C%20vorrei%20informazioni%20sulle%20collezioni%20KA%20International%20proposte%20da%20Piattelli%20e%20sullo%20showroom%20di%20Lungotevere%20Marzio%2010.%0A%0AContatto%20da%20tende.piattelli.it%20-%20KA%20International%20%2F%20Lungotevere" target="_blank" rel="noopener noreferrer">Richiedi informazioni</a>
+              </div>
+            </div>
+          </article>
+          <article class="location-box location-secondary-card" id="corner-prati-fiscali">
+            <img src="corner-zarineh-definitivo.webp" loading="lazy" width="1920" height="1080" alt="Ingresso di Zarineh Tappeti, con il corner Piattelli indicato dal contrassegno nell’angolo superiore destro" class="location-img">
+            <span class="image-disclaimer">Immagine illustrativa rielaborata digitalmente</span>
+            <span class="loc-badge">Corner espositivo Piattelli</span>
+            <h3>Via dei Prati Fiscali, 102</h3>
+            <p class="loc-sub">📍 Roma · Presso Zarineh Tappeti</p>
+            <p>Scopri tende da interno e tessuti d’arredamento Piattelli nello spazio espositivo ospitato da <strong>Zarineh Tappeti</strong>. La vetrina con i tendaggi è quella all’estrema destra. Il personale presente può mostrarti i materiali.</p>
+            <div class="corner-info-strip"><strong>In esposizione</strong><span>Tende da interno · Tessuti d’arredamento · Campioni da vedere dal vivo</span></div>
+            <div class="location-actions">
+              <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Zarineh%20Tappeti%2C%20Via%20dei%20Prati%20Fiscali%20102%2C%20Roma" target="_blank" rel="noopener noreferrer">📍 Indicazioni stradali</a>
+              <a class="btn btn-secondary" href="https://wa.me/393737502033?text=DILLO%20A%20PIATTELLI%0A%0ABuongiorno%2C%20vorrei%20visitare%20il%20corner%20Piattelli%20presso%20Zarineh%20Tappeti%20in%20Via%20dei%20Prati%20Fiscali%20102%20a%20Roma%2C%20per%20vedere%20tende%20da%20interno%20e%20tessuti%20d%E2%80%99arredamento.%0A%0AContatto%20da%20tende.piattelli.it%20%E2%80%94%20Corner%20Prati%20Fiscali" target="_blank" rel="noopener noreferrer">💬 Informazioni su WhatsApp</a>
+            </div>
+          </article>
         </div>
-
       </div>
     </div>
   </section>
@@ -227,7 +245,7 @@
   <footer class="footer">
     <div class="container center">
       <p><strong>Piattelli Tende da Sole</strong></p>
-      <p>Showroom: Lungotevere Marzio, 10 - Roma | Laboratorio: Via Federico Tozzi, 21 - Roma</p>
+      <p>Sede principale: Via Federico Tozzi, 21 · Showroom: Lungotevere Marzio, 10 · Corner presso Zarineh Tappeti: Via dei Prati Fiscali, 102 · Roma</p>
       <p class="copy">&copy; Tutti i diritti riservati.</p>
     </div>
   </footer>
